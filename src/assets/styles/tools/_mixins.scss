@@ -1,0 +1,17 @@
+/*------------------------------------*\
+# Tools: Mixins
+\*------------------------------------*/
+
+@mixin neon-shadow($color: $color-primary) {
+  text-shadow: 0 0 10px $color, 0 0 20px $color;
+}
+
+@mixin border-glow($color: $color-border) {
+  border: 2px solid $color;
+  box-shadow: 0 0 15px $color, 0 0 30px $color inset;
+}
+
+// Función para ajustar opacidad
+@function adjust-opacity($opacity) {
+  @return ($opacity);
+}

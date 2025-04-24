@@ -3,13 +3,34 @@
  * Do not include SCSS code in this file.
  */
 // // Define las capas: "Si hay conflicto, lo que esté en components gana sobre bootstrap".
-@layer bootstrap {
+// @layer bootstrap {
     @import "bootstrap-custom"; // Import Bootstrap customization here
-}
+// }
 
-@layer home {
+// @layer home {
     @import "layouts/home"; // Your custom layout styles
-}
+// }
+
+// // 1. Settings: variables globales
+@import "settings/index";
+
+// 2. Tools: funciones y mixins
+@import "tools/index";
+
+// 3. Generic: resets, normalize, etc.
+@import "generic/index";
+
+// 4. Elements: HTML base (body, headings, etc.)
+@import "elements/index";
+
+// 5. Objects: estructuras sin estilo visual
+// @import "objects/index";
+
+// 6. Components: UI reutilizable
+@import "components/index";
+
+// // 7. Trumps: clases de utilidad, overrides
+// @import "trumps/index";
 
 /**
  * Import variables

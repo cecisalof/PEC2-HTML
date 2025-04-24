@@ -1,0 +1,16 @@
+/*------------------------------------*\
+  # BASE:  Estilos base
+  Aplica estilos globales pero genéricos no específicos de proyecto.
+\*------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font-family-secondary;
+    color: $color-text;
+    text-align: left;
+  }

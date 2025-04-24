@@ -1,0 +1,11 @@
+/*------------------------------------*\
+  # GENERIC: 
+    Eliminar inconsistencias de navegador y sentar bases:
+        - Normalize.css o reset CSS
+        - Box-sizing global
+        - Fuente base, estilos para <body>, <a>, etc.
+
+        NOTA: Aplica estilos globales pero genéricos, no específicos de proyecto.
+\*------------------------------------*/
+
+@import "reset";

@@ -1,14 +1,4 @@
-@use "../variables" as v;
-
-// @layer custom {
-//   body {
-//     background-color: v.$uoc-bg; // Your custom background color
-//   }
-// }
-
-* {
-  box-sizing: border-box;
-}
+// @use "../variables" as v;
 
 body {
   display: flex;
@@ -16,11 +6,9 @@ body {
   height: 100vh;
   margin: 0;
   padding: 2rem;
-  font-family: v.$font-family-sans-serif;
-   background-color: v.$uoc-bg;
+  background-color:$uoc-bg;
   font-size: 16px;
   line-height: 24px;
-  color: v.$uoc-corporate;
 }
 
 .uoc-container {
@@ -42,18 +30,18 @@ body {
   max-width: 200px;
   height: auto;
 
-  @media (min-width: v.$mqMinWidth) {
+  @media (min-width: $mqMinWidth) {
     max-width: none;
   }
 }
 
 .uoc-title {
-  font-family: v.$font-family-serif;
+  font-family: $font-family-primary;
   font-size: 24px;
   font-weight: 700;
-  color: v.$uoc-corporate;
+  color: $uoc-corporate;
 
-  @media (min-width: v.$mqMinWidth) {
+  @media (min-width: $mqMinWidth) {
     font-size: 36px;
   }
 }
