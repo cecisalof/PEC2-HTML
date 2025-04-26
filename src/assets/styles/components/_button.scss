@@ -4,18 +4,33 @@
     border: none;
     text-align: center;
     text-decoration: none;
-    font-family: $font-family-primary;
+    font-family: $headings-font-family;
     border-radius: 8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 
-    &--primary {
-      background-color: $color-primary;
-      color: $neutral-white;
+    &-primary {
+      background-color: $primary;
+      color: $light;
+
+      &:hover{
+        color: $primary;
+        background-color: $light;
+        border-color: $primary;
+        border: solid 2px $primary;
+      }  
     }
   
-    &--secondary {
-      background-color: $neutral-white;
-      color: $color-primary;
+    &-secondary {
+      background-color: $light;
+      color: $primary;
+      border: solid 2px $primary;
+
+      &:hover{
+        color: $light;
+        background-color: $primary;
+        border: solid 2px $primary;
+      }  
     }
   }
+  
   
