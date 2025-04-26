@@ -4,22 +4,31 @@
 
 @use "sass:color";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@700&display=swap');
+// Tipografías (sobreescriben las de Bootstrap)
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: "Poppins", sans-serif;
 
-$font-family-primary: "Poppins", sans-serif;
-$font-family-secondary: "Open Sans", sans-serif;
+// Colores (mapas y variables base de Bootstrap)
+$body-bg: #F7F2E4; // Color de fondo general
+$body-color: #2D2D2D; // Color de texto base
 
+$primary: #008878; // Color principal (Bootstrap usa esto para botones, enlaces, etc.)
+$secondary: #005878; // Color secundario
+$info: #EAAE17; // Usado para estados informativos (puede funcionar como "accent")
+$light: #EFE9DD; // Neutral claro (como fondo alternativo)
 
-$color-bg: #F7F2E4;
-$color-text: #2D2D2D;
-$color-primary: #3C9A5F;
-$color-secondary: #FDF8EB;
-$neutral-white: #FAFAF9;
-$color-accent: #5C9DDC;
+// Si quieres, puedes redefinir hover en botones personalizados
+$btn-hover-bg: #265B3F; // Esto no es una variable directa de Bootstrap, pero puedes usarla en tus estilos
 
-$uoc-corporate: #3C9A5F;
-$uoc-masterbrand: #F7F2E4;
+// Otras variables personalizadas (no nativas de Bootstrap, pero útiles para extender)
+$uoc-corporate: $primary;
+$uoc-masterbrand: $body-bg;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
+// Breakpoints personalizados (si los usas más adelante)
 $mqMinWidth: 420px;
+
+// Google Fonts (puedes cargar esto en tu HTML directamente si prefieres)
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
