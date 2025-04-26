@@ -1,5 +1,20 @@
+// 1. Settings: variables globales
+@import "settings/index";
 
-@import "./settings/index"; // Mis variables personalizadas
+// 2. Tools: funciones y mixins
+@import "tools/index";
+
+// 3. Generic: resets, normalize, etc.
+@import "generic/index";
+
+// 4. Elements: HTML base (body, headings, etc.)
+@import "elements/index";
+
+// 5. Objects: estructuras sin estilo visual
+// @import "objects/index";
+
+// 6. Components: UI reutilizable
+@import "components/index";
 
 // Bootstrap core modules
 @import "bootstrap/scss/functions";
