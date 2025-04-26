@@ -3,6 +3,9 @@
  * see commented examples below
  */
 
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
@@ -14,3 +17,5 @@
   const university = "UOC";
   console.log(`Hello, ${university}!`);
 } )();
+
+
