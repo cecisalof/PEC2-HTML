@@ -86,9 +86,12 @@
 
     .header__nav-link {
       color: white;
+      font-family: $headings-font-family;
 
+      &:active,
       &:hover {
-        color: $primary;
+        color: $secondary;
+        font-weight: 500;
       }
     }
   }
