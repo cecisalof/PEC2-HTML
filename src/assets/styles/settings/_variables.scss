@@ -18,7 +18,9 @@ $secondary: #EAAE17;
 $info: #005878; // Usado para estados informativos (puede funcionar como "accent")
 $light: #FAFAF9; 
 
-$cards-bg: color.scale($primary, $lightness: 20%);
+$cards-bg: rgb(0, 136, 120, 0.7); // Color de fondo de las tarjetas
+
+
 
 // Breakpoints personalizados (si los usas más adelante)
 $mqMinWidth: 420px;
