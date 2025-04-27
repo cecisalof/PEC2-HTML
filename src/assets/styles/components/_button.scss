@@ -5,7 +5,7 @@
     text-align: center;
     text-decoration: none;
     font-family: $headings-font-family;
-    border-radius: 8;
+    border-radius: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 
     &-primary {
@@ -26,9 +26,9 @@
       border: solid 2px $primary;
 
       &:hover{
-        color: $light;
-        background-color: $primary;
-        border: solid 2px $primary;
+        color: #000;
+        background-color: $secondary;
+        border: solid 2px $secondary;
       }  
     }
   }
