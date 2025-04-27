@@ -1,38 +1,91 @@
-/* ===== Layout: Footer ===== */
 .footer {
-    background-color: #02917e;
-    color: #ffffff;
-    padding: 2rem 1rem;
-    text-align: center;
-}
+  background-color: #058d7f;
+  padding: 2rem 1rem;
+  color: #fff;
+  text-align: left;
 
-.footer__nav {
-    margin: 1rem 0;
-}
+  &__top {
+    margin-bottom: 2rem;
+  }
 
-.footer__link {
-    color: #ffffff;
-    margin: 0 0.5rem;
+  &__logo {
+    margin-bottom: 1.5rem;
+
+    img {
+      max-width: 80px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 1.5rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-bottom: 0.5rem;
+  }
+
+  &__link {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-}
+    font-weight: 600;
 
-.footer__cta {
-    background: #f5f5f5;
-    color: #02917e;
-    border: none;
-    padding: 0.8rem 2rem;
-    margin: 1rem 0;
-    border-radius: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-}
+    &:hover {
+      text-decoration: none;
+      color: $secondary;
+    }
+  }
 
-.footer__social {
-    margin-top: 1rem;
-}
+  &__cta {
+    margin-top: 1.5rem;
+  }
 
-.footer__social-link img {
-    width: 30px;
-    margin: 0 0.5rem;
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  &__social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; // Fallback para navegadores viejos
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 300px; // Controla el ancho total de los íconos
+    gap: 1rem;
+
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center; // centra los íconos en su celda
+      gap: 1rem; // Espacio entre íconos
+    }
+  }
+
+  &__social-item {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__social-link {
+    color: #ffffff; // Íconos blancos
+    font-size: 1.8rem; // Tamaño del ícono, ajustable según mockup
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #e5e2db; // Un pequeño efecto hover si quieres
+    }
+  }
 }
