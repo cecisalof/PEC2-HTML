@@ -7,6 +7,14 @@
   height: 100vh;
   overflow: hidden;
 
+  // &.header__navbar {
+ 
+  //   &.is-scrolled {
+  //     background-color: $primary;
+  //     padding: 0.5rem 1rem; // puedes ajustar para hacerlo más compacto
+  //   }
+  // }
+  
   &__logo {
     position: absolute;
     top: 1rem;
@@ -42,6 +50,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
+    font-family: $headings-font-family;
 
     &-title {
       font-weight: bold;
@@ -53,12 +62,13 @@
     }
 
     &-subtitle {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       text-transform: uppercase;
     }
 
     &-meta {
       font-size: 0.9rem;
+      margin-top: 1.5rem;
 
       &--date {
         font-weight: bold;
