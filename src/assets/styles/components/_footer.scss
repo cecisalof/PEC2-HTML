@@ -1,0 +1,38 @@
+/* ===== Layout: Footer ===== */
+.footer {
+    background-color: #02917e;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer__nav {
+    margin: 1rem 0;
+}
+
+.footer__link {
+    color: #ffffff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer__cta {
+    background: #f5f5f5;
+    color: #02917e;
+    border: none;
+    padding: 0.8rem 2rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer__social {
+    margin-top: 1rem;
+}
+
+.footer__social-link img {
+    width: 30px;
+    margin: 0 0.5rem;
+}

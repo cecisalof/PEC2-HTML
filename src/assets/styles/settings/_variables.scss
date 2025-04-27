@@ -10,21 +10,15 @@ $font-family-base: $font-family-sans-serif;
 $headings-font-family: "Poppins", sans-serif;
 
 // Colores (mapas y variables base de Bootstrap)
-$body-bg: #F7F2E4; // Color de fondo general
-$body-color: #2D2D2D; // Color de texto base
+$body-bg: #fff;
+$body-color: #2D2D2D;
 
-$primary: #008878; // Color principal (Bootstrap usa esto para botones, enlaces, etc.)
-$secondary: #005878; // Color secundario
-$info: #EAAE17; // Usado para estados informativos (puede funcionar como "accent")
-$light: #EFE9DD; // Neutral claro (como fondo alternativo)
+$primary: #008878; // Bootstrap usa esto para botones, enlaces, etc.
+$secondary: #EAAE17;
+$info: #005878; // Usado para estados informativos (puede funcionar como "accent")
+$light: #FAFAF9; 
 
-// Si quieres, puedes redefinir hover en botones personalizados
-$btn-hover-bg: #265B3F; // Esto no es una variable directa de Bootstrap, pero puedes usarla en tus estilos
-
-// Otras variables personalizadas (no nativas de Bootstrap, pero útiles para extender)
-$uoc-corporate: $primary;
-$uoc-masterbrand: $body-bg;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$cards-bg: color.scale($primary, $lightness: 20%);
 
 // Breakpoints personalizados (si los usas más adelante)
 $mqMinWidth: 420px;

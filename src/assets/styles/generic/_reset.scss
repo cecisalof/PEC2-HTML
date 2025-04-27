@@ -3,14 +3,10 @@
   Aplica estilos globales pero genéricos no específicos de proyecto.
 \*------------------------------------*/
 
-* {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: $font-family-base;
-    color: $body-color;
-    text-align: left;
-  }
+}
