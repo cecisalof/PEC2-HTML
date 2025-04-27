@@ -1,0 +1,170 @@
+/* ===== Layout: Header ===== */
+.header {
+  background: url('../images/header/header-bg.png') no-repeat center center / cover;
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  &__logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 40px;
+    height: 40px;
+    background: url('../images/logo-round.png') no-repeat center / contain;
+    display: block;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    .navbar-toggler {
+      border: none;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      .navbar-toggler-icon {
+        filter: invert(1);
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+
+    &-title {
+      font-weight: bold;
+      text-transform: uppercase;
+
+      span {
+        color: $secondary;
+      }
+    }
+
+    &-subtitle {
+      margin-top: 1rem;
+      text-transform: uppercase;
+    }
+
+    &-meta {
+      font-size: 0.9rem;
+
+      &--date {
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+
+      &--location {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $secondary;
+        margin-bottom: 0;
+      }
+
+      &--province {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__nav {
+    margin: 3rem 0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    .header__nav-link {
+      color: white;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  &__dropdown {
+    background-color: $secondary;
+    border: none;
+
+    .header__dropdown-item {
+      .header__dropdown-link {
+        color: white;
+
+        &:hover {
+          background-color: $secondary;
+          color: black;
+        }
+      }
+    }
+  }
+
+  &__collapse {
+    background-color: $primary;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+    // ===== TABLET STYLES (≥ 768px) =====
+    @media (min-width: 768px) {
+      &__content {
+        width: 80%;
+  
+        &-title {
+          font-size: 2rem;
+        }
+  
+        &-subtitle {
+          font-size: 1.2rem;
+        }
+      }
+  
+      &__nav {
+        margin: 2rem 0;
+        padding: 1.5rem;
+      }
+    }
+  
+    // ===== DESKTOP STYLES (≥ 992px) =====
+    @media (min-width: 992px) {
+      &__content {
+        width: 60%;
+  
+        &-title {
+          font-size: 2.5rem;
+        }
+  
+        &-subtitle {
+          font-size: 1.5rem;
+        }
+      }
+  
+      &__nav {
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+  
+        .header__nav-link {
+          color: white;
+          font-size: 1.1rem;
+          padding: 1rem;
+        }
+      }
+  
+      &__collapse {
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+      }
+    }
+}
