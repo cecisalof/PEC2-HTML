@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <include src="./views/header.html"></include>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-      <button class="btn btn--primary">Botón primario</button>
-      <button class="btn btn--secondary">Botón primario</button>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Jornadas de Economía circular</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+  <main class="main">
+    <section class="program">
+      <h3 class="program__title">Programa:</h3>
+      <div class="program__event">09:00 | Recepción y acreditaciones</div>
+      <div class="program__event">10:00 | Inauguración</div>
+    </section>
+
+    <section class="talks">
+      <h3 class="talks__title">Ponencias:</h3>
+
+      <div class="talks__item talk">
+        <!-- <img class="talk__image" src="./assets/images/speaker.png" alt="Ponente"> -->
+        <div class="talk__info">
+          <p class="talk__time"><strong>03 de Sept - 10:30 hrs.</strong></p>
+          <p class="talk__topic">Circularidad en los plásticos de RAEE</p>
+          <p class="talk__speaker"><em>Paula León<br>CEO Sostenplas SL</em></p>
+        </div>
+      </div>
+
+      <div class="talks__item talk">
+        <!-- <img class="talk__image" src="./assets/images/speaker.png" alt="Ponente"> -->
+        <div class="talk__info">
+          <p class="talk__time"><strong>03 de Sept - 11:30 hrs.</strong></p>
+          <p class="talk__topic">Retos en la gestión de residuos</p>
+          <p class="talk__speaker"><em>Paula León<br>CEO Sostenplas SL</em></p>
+        </div>
+      </div>
+
+      <div class="program__event">12:00 | Pausa - aperitivo</div>
+
+      <div class="talks__item talk">
+        <!-- <img class="talk__image" src="./assets/images/speaker.png" alt="Ponente"> -->
+        <div class="talk__info">
+          <p class="talk__time"><strong>03 de Sept - 12:30 hrs.</strong></p>
+          <p class="talk__topic">Circularidad en los plásticos de RAEE</p>
+          <p class="talk__speaker"><em>Paula León<br>CEO Sostenplas SL</em></p>
+        </div>
+      </div>
+
+      <div class="talks__item talk">
+        <!-- <img class="talk__image" src="./assets/images/speaker.png" alt="Ponente"> -->
+        <div class="talk__info">
+          <p class="talk__time"><strong>03 de Sept - 13:30 hrs.</strong></p>
+          <p class="talk__topic">Circularidad en los plásticos de RAEE</p>
+          <p class="talk__speaker"><em>Paula León<br>CEO Sostenplas SL</em></p>
+        </div>
+      </div>
+
+      <div class="program__event">14:30 | Pausa - comida</div>
+    </section>
+
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>
