@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="../assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Jornadas de Economía circular</title>
 </head>
+
 <body>
-    <!-- <include src="./header.html"></include> -->
-    <h1>PROGRAMA DE PONENTES</h1>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-transparent header__navbar fixed-top">
+      <div class="container-fluid">
+        <a class="header__logo" href="/"></a>
+        <div class="header__menu">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="header__collapse collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="header__nav navbar-nav ms-auto">
+            <li class="header__nav-item nav-item">
+              <a class="header__nav-link nav-link active" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="header__nav-item nav-item">
+              <a class="header__nav-link nav-link" href="/speakers">Programa</a>
+            </li>
+            <li class="header__nav-item nav-item">
+              <a class="header__nav-link nav-link" href="/about">Sobre el futuro redondo</a>
+            </li>
+            <li class="header__nav-item nav-item">
+              <a class="header__nav-link nav-link" href="/contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header__content">
+      <h1 class="header__content-title">
+        Juntos, hacia un <span>futuro redondo</span>
+      </h1>
+      <h2 class="header__content-subtitle">
+        Primeras Jornadas de Economía Circular
+      </h2>
+      <div class="header__content-meta">
+        <p class="header__content-meta--date">Septiembre 2025</p>
+        <p class="header__content-meta--location">Centro Artesanal Torrearte</p>
+        <p class="header__content-meta--province">Madrid</p>
+      </div>
+    </div>
+  </header>
+  <h1>PROGRAMA DE PONENTES</h1>
+  <!-- <include src="./components/footer.html"></include> -->
+  <script type="module" src="../assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
+
 </html>
