@@ -6,6 +6,9 @@
         text-transform: uppercase;
         color: $primary;
         font-weight: 700;
+        @supports (display: grid) {
+           margin-bottom: 0;
+        }
     }
 
     &__event,
