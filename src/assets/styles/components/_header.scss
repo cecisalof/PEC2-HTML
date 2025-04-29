@@ -4,8 +4,14 @@
   color: #ffffff;
   text-align: left;
   position: relative;
-  height: 60vh;
+  height: 80vh;
   overflow: hidden;
+
+  @media screen and (max-width: 932px) and (orientation: landscape) {
+    /* Estilos para mobile en landscape */
+    height: 100vh;
+  }
+  
 
   // &.header__navbar {
  
@@ -51,6 +57,12 @@
     transform: translate(-50%, -50%);
     width: 90%;
     font-family: $headings-font-family;
+
+    @media screen and (max-width: 932px) and (orientation: landscape) {
+      /* Estilos para mobile en landscape */
+      top: 60%;
+    }
+    
 
     &-title {
       font-weight: bold;
