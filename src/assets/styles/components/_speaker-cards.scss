@@ -1,0 +1,67 @@
+.speaker-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+
+  .speaker-card {
+    flex: 1 1 100%; // 1 columna por defecto
+  }
+
+  @include respond-to-container(600px) {
+    .speaker-card {
+      flex: 1 1 calc(50% - 0.75rem); // 2 columnas
+    }
+  }
+
+  @include respond-to-container(1024px) {
+    .speaker-card {
+      flex: 1 1 calc(33.333% - 1rem); // 3 columnas
+    }
+  }
+}
+
+// ===== SPEAKER CARDS STYLES =====
+// Estilos para las tarjetas de los ponentes
+
+.speaker-card {
+  background-color: #f9f9f6;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  max-width: 280px;
+  margin: 0 auto;
+
+  &__image-wrapper {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #37b3a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0.25rem;
+    color: #000;
+  }
+
+  &__description {
+    font-size: 0.875rem;
+    color: #666;
+    margin: 0;
+  }
+}

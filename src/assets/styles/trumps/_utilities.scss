@@ -1,0 +1,11 @@
+// Habilita container queries basadas en el ancho del contenedor
+.is-container {
+    container-type: inline-size;
+    // outline: 3px dashed magenta;
+  }
+
+// Habilita container queries basadas en ancho y alto del contenedor
+  .has-container {
+    container-type: size;
+  }
+  
