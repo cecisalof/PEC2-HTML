@@ -1,31 +1,23 @@
-// 1. Settings: variables globales
-@import "settings/index";
+// bootstrap-custom.scss
+// =============================================
+// Carga modular de Bootstrap, después de definir tus variables
+// =============================================
 
-// 2. Tools: funciones y mixins
-@import "tools/index";
-
-// 3. Generic: resets, normalize, etc.
-@import "generic/index";
-
-// 4. Elements: HTML base (body, headings, etc.)
-@import "elements/index";
-
-// 5. Objects: estructuras sin estilo visual
-// @import "objects/index";
-
-// 6. Components: UI reutilizable
-@import "components/index";
-
-// Bootstrap core modules
+// Core functions & variables
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
+
+// Optional utilities (si usas el sistema de utilidades)
 @import "bootstrap/scss/utilities";
 
-// Optional: reset (reboot) for normalization
+// Base resets
 @import "bootstrap/scss/reboot";
 
-// 👉 Import only the modules you want
+// Components que realmente uses (solo importa los necesarios)
 @import "bootstrap/scss/buttons";
-
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/nav"; // puedes agregar más si los usas

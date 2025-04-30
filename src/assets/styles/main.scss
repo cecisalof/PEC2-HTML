@@ -2,41 +2,35 @@
  * Use this file to import partials.
  * Do not include SCSS code in this file.
  */
-// // Define las capas: "Si hay conflicto, lo que esté en components gana sobre bootstrap".
-// @layer bootstrap {
-    @import "bootstrap-custom"; // Import Bootstrap customization here
-// }
-
-// @layer home {
-    @import "layouts/home"; // Your custom layout styles
-// }
-
-// // 1. Settings: variables globales
-@import "settings/index";
-
-// 2. Tools: funciones y mixins
-@import "tools/index";
-
-// 3. Generic: resets, normalize, etc.
-@import "generic/index";
-
-// 4. Elements: HTML base (body, headings, etc.)
-@import "elements/index";
-
-// 5. Objects: estructuras sin estilo visual
-// @import "objects/index";
-
-// 6. Components: UI reutilizable
-@import "components/index";
-
-// // 7. Trumps: clases de utilidad, overrides
-// @import "trumps/index";
 
 /**
  * Import variables
  */
 
-// @import "variables";
+// 1. Settings: sobrescriben Bootstrap
+@import "settings/index";
+
+// 2. Tools: mixins y funciones propias
+@import "tools/index";
+
+// 3. Bootstrap modular
+@import "bootstrap-custom";
+
+// 4. Generic (normalize, reset)
+@import "generic/index";
+
+// 5. Elements (etiquetas HTML)
+@import "elements/index";
+
+// 6. Objects (estructuras sin aspecto)
+@import "objects/index";
+
+// 7. Components (UI reutilizable)
+@import "components/index";
+
+// 8. Trumps (utilities, helpers)
+@import "trumps/index";
+
 
 /**
  * Import npm dependencies
@@ -53,7 +47,7 @@
  * It's a best practice to use a different partial for each page
  */
 
-// @import "layouts/home";
+@import "layouts/home";
 
 /**
  * Do NOT include anything else in this file!

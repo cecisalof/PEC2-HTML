@@ -4,23 +4,13 @@
 
 @use "sass:color";
 
-// Tipografías (sobreescriben las de Bootstrap)
-$font-family-sans-serif: "Open Sans", sans-serif;
-$font-family-base: $font-family-sans-serif;
+// Tipografías
+// $font-family-sans-serif: "Open Sans", sans-serif;
+// $font-family-base: $font-family-sans-serif;
 $headings-font-family: "Poppins", sans-serif;
 
-// Colores (mapas y variables base de Bootstrap)
-$body-bg: #fff;
-$body-color: #2D2D2D;
-
-$primary: #008878; // Bootstrap usa esto para botones, enlaces, etc.
-$secondary: #EAAE17;
-$info: #005878; // Usado para estados informativos (puede funcionar como "accent")
-$light: #FAFAF9; 
-
+// Colores 
 $cards-bg: rgb(0, 136, 120, 0.7); // Color de fondo de las tarjetas
-
-
 
 // Breakpoints personalizados (si los usas más adelante)
 $mqMinWidth: 420px;
