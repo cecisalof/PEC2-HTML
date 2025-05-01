@@ -8,9 +8,18 @@
     background: #ffffff;
     padding: 1rem 1rem;
     margin-top: -7rem;
+
     @media screen and (max-width: 932px) and (orientation: landscape) {
         /* Estilos para mobile en landscape */
-        margin-top: 0;      }
+        margin-top: auto;
+    }
+
+    @media (min-width: 1024px) {
+        /* Estilos para mobile en portrait */
+        margin-top: auto;
+        padding: 5rem;
+        
+    }
 }
 
 
@@ -33,4 +42,3 @@
     flex-direction: column;
     align-items: center;
 }
-

@@ -1,17 +1,24 @@
 /* ===== Layout: Header ===== */
 .header {
-  background: url('../images/header/header-bg.png') no-repeat center center / cover;
   color: #ffffff;
   text-align: left;
   position: relative;
   height: 80vh;
   overflow: hidden;
 
-  @media screen and (max-width: 932px) and (orientation: landscape) {
+  // @media screen and (max-width: 932px) and (orientation: landscape) {
+  //   /* Estilos para mobile en landscape */
+  //   height: 100vh;
+  // }
+  @media (min-width: 992px) {
     /* Estilos para mobile en landscape */
-    height: 100vh;
+    height: 60vh;   
   }
-  
+
+  @media (min-width: 1441px) {
+    /* Estilos para mobile en landscape */
+    height: 50vh;   
+  }
 
   // &.header__navbar {
  
@@ -144,8 +151,6 @@
   // ===== TABLET STYLES (≥ 768px) =====
   @media (min-width: 768px) {
     &__content {
-      width: 80%;
-
       &-title {
         font-size: 2rem;
       }
@@ -163,9 +168,9 @@
 
   // ===== DESKTOP STYLES (≥ 992px) =====
   @media (min-width: 992px) {
-    &__content {
-      width: 60%;
 
+    &__content {
+      top: 55%;
       &-title {
         font-size: 2.5rem;
       }
