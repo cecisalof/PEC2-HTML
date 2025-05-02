@@ -3,24 +3,27 @@
   color: #ffffff;
   text-align: left;
   position: relative;
-  height: 80vh;
+  height: 50vh;
   overflow: hidden;
-  clip-path: ellipse(100% 100% at 60% 0);
+  // clip-path: ellipse(100% 100% at 60% 0);
+  
+  @media (min-width: 768px) and (max-width: 1439px) {
+    height: 40vh;   
+  }
 
-
-
-  // @media screen and (max-width: 932px) and (orientation: landscape) {
-  //   /* Estilos para mobile en landscape */
-  //   height: 100vh;
-  // }
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1300px) and (orientation: landscape) {
     height: 60vh;   
   }
 
-  @media (min-width: 1441px) {
+  @media screen and (max-width: 932px) and (orientation: landscape) {
     /* Estilos para mobile en landscape */
-    height: 50vh;   
+    height: 100vh;
   }
+  
+  // @media (min-width: 1441px) {
+  //   /* Estilos para mobile en landscape */
+  //   height: 50vh;   
+  // }
 
   // &.header__navbar {
  
@@ -59,9 +62,18 @@
     }
   }
 
+  // &__image {
+  //   // width: 100vw;
+  //   // height: auto; /* o un valor fijo si necesitas altura controlada */
+  //   // object-fit: cover;         /* para recorte tipo fondo */
+  //   // object-position: center top; /* aquí está la clave */
+  //   // display: block;
+  //   // filter: brightness(0.5);
+  // }
+
   &__content {
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;

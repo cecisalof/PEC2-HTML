@@ -1,5 +1,5 @@
 <header class="header" data-hero-base="header-home" data-hero-alt="Fondo página 1">
-  <picture class="hero__image" id="heroPicture">
+  <picture class="header__image">
         <!-- Desktop HD (pantallas grandes > 1600px) -->
         <source
         srcset="./assets/images/header/header-home-desktop-hd.jpg?as=avif&width=1920&dpr=2 2x, ./assets/images/header/header-home-desktop-hd.jpg?as=avif&width=1920&dpr=1 1x"
@@ -29,16 +29,16 @@
   
       <!-- Mobile (pantallas < 768px) -->
       <source
-        srcset="./assets/images/header/header-home-mobile.jpg?as=avif&width=464&dpr=2 2x, ./assets/images/header/header-home-mobile.jpg?as=avif&width=464&dpr=1 1x"
-        type="image/avif" media="(max-width: 47.99em)" sizes="165vw">
+        srcset="./assets/images/header/header-home-mobile-vf.jpg?as=avif&width=464&dpr=2 2x, ./assets/images/header/header-home-mobile-vf.jpg?as=avif&width=464&dpr=1 1x"
+        type="image/avif" media="(max-width: 47.99em)" sizes="100vw">
       <source
-        srcset="./assets/images/header/header-home-mobile.jpg?as=webp&width=464&dpr=2 2x, ./assets/images/header/header-home-mobile.jpg?as=webp&width=464&dpr=1 1x"
-        type="image/webp" media="(max-width: 47.99em)" sizes="165vw">
+        srcset="./assets/images/header/header-home-mobile-vf.jpg?as=webp&width=464&dpr=2 2x, ./assets/images/header/header-home-mobile-vf.jpg?as=webp&width=464&dpr=1 1x"
+        type="image/webp" media="(max-width: 47.99em)" sizes="100vw">
   
   
       <!-- Fallback JPG para navegadores antiguos -->
-      <img src="./assets/images/header/header-home-mobile.jpg" alt="Hands on earth"
-        style="width: 100vw; display: block; margin: 0 auto;" sizes="200vw">
+      <img src="./assets/images/header/header-home-mobile-vf.jpg" alt="Hands on earth"
+        style="width: 100vw; display: block; margin: 0 auto;" sizes="100vw">
   </picture> <!-- requerido para que JS lo reemplace -->
   <include src="./views/navbar.html"></include>
 
