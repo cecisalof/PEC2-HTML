@@ -14,11 +14,13 @@
         margin-top: auto;
     }
 
-    @media (min-width: 1024px) {
-        /* Estilos para mobile en portrait */
+    @media (min-width: 768px) {
         margin-top: auto;
-        padding: 5rem;
-        
+        padding: 3rem;      
+    }
+
+    @media (min-width: 1440px) {
+        padding: 3rem 10rem;  
     }
 }
 
