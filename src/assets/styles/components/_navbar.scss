@@ -1,0 +1,7 @@
+.fixed-top {
+    // background-color: $primary;
+    // transition: background-color 0.3s ease;
+    @media (min-width: 1024px) {
+        padding: 1rem;
+      }
+}
