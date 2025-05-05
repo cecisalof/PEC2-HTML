@@ -31,7 +31,7 @@ const headerHeight = header.offsetHeight;
 
 window.addEventListener('scroll', function () {
   const navbar = document.getElementById('navbar');
-  if (window.scrollY > headerHeight) {
+  if (window.scrollY > headerHeight - 20) {
     navbar.classList.remove('bg-transparent');
     navbar.classList.add('bg-scroll');
   } else {
