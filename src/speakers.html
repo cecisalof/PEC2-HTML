@@ -10,6 +10,47 @@
 
 <body>
   <header class="header">
+    <picture class="header__image">
+      <!-- Desktop HD (pantallas grandes > 1600px) -->
+      <source
+        srcset="./assets/images/header/speakers/header-speakers-desktop-hd.jpg?as=avif&width=1920&dpr=2 2x, ./assets/images/header/speakers/header-speakers-desktop-hd.jpg?as=avif&width=1920&dpr=1 1x"
+        type="image/avif" media="(min-width: 100em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/speakers/header-speakers-desktop-hd.jpg?as=webp&width=1920&dpr=2 2x, ./assets/images/header/speakers/header-speakers-desktop-hd.jpg?as=webp&width=1920&dpr=1 1x"
+        type="image/webp" media="(min-width: 100em)" sizes="100vw">
+
+
+      <!-- Desktop normal (pantallas entre 1200px - 1599px) -->
+      <source
+        srcset="./assets/images/header/speakers/header-speakers-desktop.jpg?as=avif&width=1200&dpr=2 2x, ./assets/images/header/speakers/header-speakers-desktop.jpg?as=avif&width=1200&dpr=1 1x"
+        type="image/avif" media="(min-width: 75em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/speakers/header-speakers-desktop.jpg?as=webp&width=1200&dpr=2 2x, ./assets/images/header/speakers/header-speakers-desktop.jpg?as=webp&width=1200&dpr=1 1x"
+        type="image/webp" media="(min-width: 75em)" sizes="100vw">
+
+
+      <!-- Tablet (pantallas entre 768px - 1199px) -->
+      <source
+        srcset="./assets/images/header/speakers/header-speakers-tablet.jpg?as=avif&width=1024&dpr=2 2x, ./assets/images/header/speakers/header-speakers-tablet.jpg?as=avif&width=1024&dpr=1 1x"
+        type="image/avif" media="(min-width: 48em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/speakers/header-speakers-tablet.jpg?as=webp&width=1024&dpr=2 2x, ./assets/images/header/speakers/header-speakers-tablet.jpg?as=webp&width=1024&dpr=1 1x"
+        type="image/webp" media="(min-width: 48em)" sizes="100vw">
+
+
+      <!-- Mobile (pantallas < 768px) -->
+      <source
+        srcset="./assets/images/header/speakers/header-speakers-mobile.jpg?as=avif&width=464&dpr=2 2x, ./assets/images/header/speakers/header-speakers-mobile.jpg?as=avif&width=464&dpr=1 1x"
+        type="image/avif" media="(max-width: 47.99em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/speakers/header-speakers-mobile.jpg?as=webp&width=464&dpr=2 2x, ./assets/images/header/speakers/header-speakers-mobile.jpg?as=webp&width=464&dpr=1 1x"
+        type="image/webp" media="(max-width: 47.99em)" sizes="100vw">
+
+
+      <!-- Fallback JPG para navegadores antiguos -->
+      <img src="./assets/images/header/speakers/header-speakers-mobile.jpg" alt="Hands on earth"
+        style="width: 100vw; display: block; margin: 0 auto;" sizes="100vw">
+    </picture> <!-- requerido para que JS lo reemplace -->
     <include src="./views/navbar.html"></include>
 
     <div class="header__content">
@@ -37,23 +78,27 @@
         <p class="speaker-card__description">Fundador y Director del Product-Life Institute</p>
         <div class="speaker-card__links">
           <a href="https://www.product-life.org/" target="_blank" rel="noopener" class="speaker-card__link">🌐</a>
-          <a href="https://ch.linkedin.com/in/walter-r-stahel-68b87893" target="_blank" rel="noopener" class="speaker-card__link">🔗</a>
+          <a href="https://ch.linkedin.com/in/walter-r-stahel-68b87893" target="_blank" rel="noopener"
+            class="speaker-card__link">🔗</a>
         </div>
       </div>
-    
+
       <!-- Jocelyn Blériot -->
       <div class="speaker-card">
         <div class="speaker-card__image-wrapper">
           <img class="speaker-card__image" src="./assets/images/speakers/jocelyn.png" alt="Jocelyn Blériot" />
         </div>
         <h3 class="speaker-card__name">Jocelyn Blériot</h3>
-        <p class="speaker-card__description">Director Ejecutivo de Instituciones Internacionales y Relaciones Gubernamentales en la Fundación Ellen MacArthur</p>
+        <p class="speaker-card__description">Director Ejecutivo de Instituciones Internacionales y Relaciones
+          Gubernamentales en la Fundación Ellen MacArthur</p>
         <div class="speaker-card__links">
-          <a href="https://www.ellenmacarthurfoundation.org/" target="_blank" rel="noopener" class="speaker-card__link">🌐</a>
-          <a href="https://uk.linkedin.com/in/jocelyn-bl%C3%A9riot-%F0%9F%87%AB%F0%9F%87%B7-%F0%9F%87%AC%F0%9F%87%A7-%F0%9F%87%AA%F0%9F%87%BA-82b1a025" target="_blank" rel="noopener" class="speaker-card__link">🔗</a>
+          <a href="https://www.ellenmacarthurfoundation.org/" target="_blank" rel="noopener"
+            class="speaker-card__link">🌐</a>
+          <a href="https://uk.linkedin.com/in/jocelyn-bl%C3%A9riot-%F0%9F%87%AB%F0%9F%87%B7-%F0%9F%87%AC%F0%9F%87%A7-%F0%9F%87%AA%F0%9F%87%BA-82b1a025"
+            target="_blank" rel="noopener" class="speaker-card__link">🔗</a>
         </div>
       </div>
-    
+
       <!-- Leyla Acaroglu -->
       <div class="speaker-card">
         <div class="speaker-card__image-wrapper">
@@ -63,23 +108,26 @@
         <p class="speaker-card__description">Fundadora de Disrupt Design y The UnSchool</p>
         <div class="speaker-card__links">
           <a href="https://www.leylaacaroglu.com/" target="_blank" rel="noopener" class="speaker-card__link">🌐</a>
-          <a href="https://au.linkedin.com/in/leylaacaroglu" target="_blank" rel="noopener" class="speaker-card__link">🔗</a>
+          <a href="https://au.linkedin.com/in/leylaacaroglu" target="_blank" rel="noopener"
+            class="speaker-card__link">🔗</a>
         </div>
       </div>
-    
+
       <!-- Ken Webster -->
       <div class="speaker-card">
         <div class="speaker-card__image-wrapper">
           <img class="speaker-card__image" src="./assets/images/speakers/ken.png" alt="Ken Webster" />
         </div>
         <h3 class="speaker-card__name">Ken Webster</h3>
-        <p class="speaker-card__description">Profesor Visitante en la Universidad de Cranfield y ex Director de Innovación en la Fundación Ellen MacArthur</p>
+        <p class="speaker-card__description">Profesor Visitante en la Universidad de Cranfield y ex Director de
+          Innovación en la Fundación Ellen MacArthur</p>
         <div class="speaker-card__links">
           <a href="https://www.circular-economy.earth/" target="_blank" rel="noopener" class="speaker-card__link">🌐</a>
-          <a href="https://uk.linkedin.com/in/society-for-the-circular-economy" target="_blank" rel="noopener" class="speaker-card__link">🔗</a>
+          <a href="https://uk.linkedin.com/in/society-for-the-circular-economy" target="_blank" rel="noopener"
+            class="speaker-card__link">🔗</a>
         </div>
       </div>
-    
+
       <!-- Michael Braungart -->
       <div class="speaker-card">
         <div class="speaker-card__image-wrapper">
@@ -89,10 +137,11 @@
         <p class="speaker-card__description">Cofundador del concepto Cradle to Cradle y Director de EPEA</p>
         <div class="speaker-card__links">
           <a href="https://epea.com/" target="_blank" rel="noopener" class="speaker-card__link">🌐</a>
-          <a href="https://de.linkedin.com/in/michael-braungart-a872ab119" target="_blank" rel="noopener" class="speaker-card__link">🔗</a>
+          <a href="https://de.linkedin.com/in/michael-braungart-a872ab119" target="_blank" rel="noopener"
+            class="speaker-card__link">🔗</a>
         </div>
       </div>
-    
+
       <!-- Virginijus Sinkevičius -->
       <div class="speaker-card">
         <div class="speaker-card__image-wrapper">
@@ -101,14 +150,16 @@
         <h3 class="speaker-card__name">Virginijus Sinkevičius</h3>
         <p class="speaker-card__description">Comisario Europeo de Medio Ambiente, Océanos y Pesca</p>
         <div class="speaker-card__links">
-          <a href="https://commissioners.ec.europa.eu/virginijus-sinkevicius_en" target="_blank" rel="noopener" class="speaker-card__link">🌐</a>
-          <a href="https://be.linkedin.com/in/virginijussinkevicius" target="_blank" rel="noopener" class="speaker-card__link">🔗</a>
+          <a href="https://commissioners.ec.europa.eu/virginijus-sinkevicius_en" target="_blank" rel="noopener"
+            class="speaker-card__link">🌐</a>
+          <a href="https://be.linkedin.com/in/virginijussinkevicius" target="_blank" rel="noopener"
+            class="speaker-card__link">🔗</a>
         </div>
-    
+
       </div>
-    
+
     </div>
-    
+
   </main>
 
   <include src="./views/footer.html"></include>
