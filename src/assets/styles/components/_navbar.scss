@@ -1,8 +1,9 @@
 .fixed-top {
   height: 8vh;
+
   @media (min-width: 1024px) {
-      padding: 1rem;
-    }
+    padding: 1rem;
+  }
 }
 
 .bg-scroll {
