@@ -17,6 +17,10 @@
 //   }
 // }
 
+.about-header {
+  text-align: center;
+}
+
 .article {
   container-name: article;
   padding: 0.5rem;
@@ -29,12 +33,13 @@
     &-img {
       max-width: 100%;
       height: auto;
+      // display: block;
     }
   }
 
   &__title {
-    font-size: 1.5rem;
     letter-spacing: 0;
+    // font-size: 1.5rem;
   }
 
   &__author {
@@ -47,11 +52,12 @@
   }
 
   &__blockquote {
-    margin: 1.5rem 0;
+    // margin: 1.5rem 0;
     padding: 1rem;
     background: $light;
     border-left: 4px solid $primary;
     font-style: italic;
+    font-size: 1.25rem;
   }
 
   &__image {
@@ -65,11 +71,29 @@
     gap: 1rem;
     margin: 2rem 0;
     padding-block: 2rem;
-    border-top: solid 1px $info;
-    border-bottom: solid 1px $info;
+    border-top: solid 1px $cards-bg-secondary;
+    border-bottom: solid 1px $cards-bg-secondary;
 
     &-item {
-      padding: 1rem;
+      // padding: 1rem;
+
+      &--title {
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &--bg {
+        display: inline-block;
+        width: 40;
+        height: 40;
+        background-color: $secondary;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 2.5rem;
+        color: $light;
+        font-weight: bold;
+        margin-right: 0.5rem;
+      }
     }
   }
 
@@ -93,19 +117,28 @@
   }
 
   &:has(.article__image) {
-    border-top: 1px dashed #ccc;
+    border-top: 1px dashed $primary;
     padding-top: 1rem;
   }
 }
 
 // Container Query
 @container (min-width: 600px) {
-  .article__title {
-    font-size: 2.5rem;
+  .article {
+    padding: 1rem 3rem;
+    margin: 2rem;
+  }
+}
+
+@container (min-width: 1200px) {
+  .article {
+    padding: 3rem 10rem; 
+    margin: 2rem;
   }
 }
 
 // Using :is() for shared styling
 :is(h3) {
   color: $primary;
+  margin: 1rem 0;
 }
