@@ -1,28 +1,3 @@
-.speaker-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  width: 100%;
-  margin: 0 auto;
-  align-items: stretch;
-
-  .speaker-card {
-    flex: 1 1 100%; // 1 columna por defecto
-  }
-
-  @include respond-to-container(600px) {
-    .speaker-card {
-      flex: 1 1 calc(50% - 0.75rem); // 2 columnas
-    }
-  }
-
-  @include respond-to-container(1024px) {
-    .speaker-card {
-      flex: 1 1 calc(33.333% - 1rem); // 3 columnas
-    }
-  }
-}
-
 // ===== SPEAKER CARDS STYLES =====
 // Estilos para las tarjetas de los ponentes
 
@@ -82,6 +57,31 @@
 
     &:hover {
       color: #004471;
+    }
+  }
+}
+
+.speaker-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  align-items: stretch;
+
+  .speaker-card {
+    flex: 1 1 100%; // 1 columna por defecto
+  }
+
+  @include respond-to-container(600px) {
+    .speaker-card {
+      flex: 1 1 calc(50% - 0.75rem); // 2 columnas
+    }
+  }
+
+  @include respond-to-container(1024px) {
+    .speaker-card {
+      flex: 1 1 calc(33.333% - 1rem); // 3 columnas
     }
   }
 }

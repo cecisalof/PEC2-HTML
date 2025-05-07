@@ -6,33 +6,20 @@
   height: 70vh;
   overflow: hidden;
   // clip-path: ellipse(100% 100% at 60% 0);
-  
+
   @media (min-width: 768px) and (max-width: 1439px) {
-    height: 40vh;   
+    height: 50vh;
   }
 
   @media (min-width: 768px) and (max-width: 1300px) and (orientation: landscape) {
-    height: 60vh;   
+    height: 60vh;
   }
 
-  @media screen and (max-width: 932px) and (orientation: landscape) {
+  @media screen and (max-width: 800px) and (orientation: landscape) {
     /* Estilos para mobile en landscape */
     height: 100vh;
   }
-  
-  // @media (min-width: 1441px) {
-  //   /* Estilos para mobile en landscape */
-  //   height: 50vh;   
-  // }
 
-  // &.header__navbar {
- 
-  //   &.is-scrolled {
-  //     background-color: $primary;
-  //     padding: 0.5rem 1rem; // puedes ajustar para hacerlo más compacto
-  //   }
-  // }
-  
   &__logo {
     position: absolute;
     top: 0.5rem;
@@ -67,6 +54,22 @@
     }
   }
 
+  &__img-container {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $cards-bg;
+      pointer-events: none;
+    }
+  }
+
   // &__image {
   //   // width: 100vw;
   //   // height: auto; /* o un valor fijo si necesitas altura controlada */
@@ -88,7 +91,7 @@
       /* Estilos para mobile en landscape */
       top: 60%;
     }
-    
+
 
     &-title {
       font-weight: bold;
@@ -145,21 +148,21 @@
     }
   }
 
-  &__dropdown {
-    background-color: $secondary;
-    border: none;
+  // &__dropdown {
+  //   background-color: $secondary;
+  //   border: none;
 
-    .header__dropdown-item {
-      .header__dropdown-link {
-        color: white;
+  //   // .header__dropdown-item {
+  //     .header__dropdown-link {
+  //       color: white;
 
-        &:hover {
-          background-color: $secondary;
-          color: black;
-        }
-      }
-    }
-  }
+  //       &:hover {
+  //         background-color: $secondary;
+  //         color: black;
+  //       }
+  //     }
+  //   // }
+  // }
 
   &__collapse {
     background-color: $primary;
@@ -190,6 +193,7 @@
 
     &__content {
       top: 55%;
+
       &-title {
         font-size: 2.5rem;
       }
