@@ -3,22 +3,31 @@
   color: #ffffff;
   text-align: left;
   position: relative;
-  height: 70vh;
+  // height: 70vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
   // clip-path: ellipse(100% 100% at 60% 0);
 
   @media (min-width: 768px) and (max-width: 1439px) {
     height: 50vh;
   }
 
+
+  @media (min-width: 1440px) {
+    height: 70vh;
+  }
+
+
   @media (min-width: 768px) and (max-width: 1300px) and (orientation: landscape) {
     height: 60vh;
   }
 
-  @media screen and (max-width: 800px) and (orientation: landscape) {
-    /* Estilos para mobile en landscape */
-    height: 100vh;
-  }
+  // @media screen and (max-width: 800px) and (orientation: landscape) {
+  //   /* Estilos para mobile en landscape */
+  //   height: 100vh;
+  // }
 
   &__logo {
     position: absolute;
@@ -92,6 +101,9 @@
       top: 60%;
     }
 
+    @media (min-width: 1440px) {
+      padding: 0 5rem;
+    }
 
     &-title {
       font-weight: bold;
