@@ -3,31 +3,28 @@
   color: #ffffff;
   text-align: left;
   position: relative;
-  // height: 70vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  // align-items: center;
-  // clip-path: ellipse(100% 100% at 60% 0);
+  align-items: center;
+  height: 70vh; // Valor base para pantallas grandes
 
-  @media (min-width: 768px) and (max-width: 1439px) {
+  // === Mobile landscape (pantallas pequeñas en horizontal) ===
+  @media (max-width: 800px) and (orientation: landscape) {
+    .header {
+      height: 100vh; // Fallback para navegadores antiguos
+
+      @supports (height: 100dvh) {
+        height: 100dvh; // Navegadores modernos
+      }
+    }
+  }
+
+  // Pantallas medianas en general
+  @media (min-width: 768px) and (max-width: 1439px) and (orientation: portrait){
     height: 50vh;
+    align-items: stretch;
   }
-
-
-  @media (min-width: 1440px) {
-    height: 70vh;
-  }
-
-
-  @media (min-width: 768px) and (max-width: 1300px) and (orientation: landscape) {
-    height: 60vh;
-  }
-
-  // @media screen and (max-width: 800px) and (orientation: landscape) {
-  //   /* Estilos para mobile en landscape */
-  //   height: 100vh;
-  // }
 
   &__logo {
     position: absolute;
