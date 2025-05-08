@@ -16,11 +16,6 @@
 //     }
 //   }
 // }
-
-.about-header {
-  text-align: center;
-}
-
 .article {
   container-name: article;
   padding: 0.5rem;
@@ -33,14 +28,19 @@
     &-img {
       max-width: 100%;
       height: auto;
-      // display: block;
     }
   }
 
   &__title {
     letter-spacing: 0;
-    // font-size: 1.5rem;
   }
+
+
+  &__subtitle {
+    color: $primary;
+    letter-spacing: 0.5rem;
+    margin: 1.5rem 0;
+  }	
 
   &__author {
     font-style: italic;
@@ -69,13 +69,11 @@
     display: grid;
     gap: 1rem;
     margin: 2rem 0;
-    padding-block: 2rem;
+    padding-bottom: 2rem;
     border-top: solid 1px $cards-bg-secondary;
     border-bottom: solid 1px $cards-bg-secondary;
 
     &-item {
-      // padding: 1rem;
-
       &-title {
         font-size: 1.125rem;
         margin-bottom: 0.5rem;
@@ -132,12 +130,10 @@
     &-quote {
       margin: 3rem 0;
     }
+  }
 
-    &-title {
-      color: $primary;
-      letter-spacing: 0.5rem;
-      margin: 2rem 0;
-    }
+  &__speakers-cards {
+    margin: 3rem 0;
   }
 
   &:has(.article__image) {

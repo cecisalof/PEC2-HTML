@@ -1,4 +1,4 @@
-// settings/_bootstrap-overrides.scss
+/* stylelint-disable-next-line */
 // =============================================
 // Sobrescribe variables de Bootstrap antes de que se cargue
 // =============================================
@@ -20,22 +20,22 @@ $font-family-base: "Open Sans", sans-serif;
 // 📏 Espaciado
 $spacer: 1rem;
 
-// 📱 Breakpoints
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 1024px,
-  xl: 1280px
-);
+// // 📱 Breakpoints
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 1024px,
+//   xl: 1280px
+// );
 
-// 📦 Contenedores
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
-);
+// // 📦 Contenedores
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px
+// );
 
 // 🌑 Sombra base
 $box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
