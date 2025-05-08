@@ -52,7 +52,6 @@
   }
 
   &__blockquote {
-    // margin: 1.5rem 0;
     padding: 1rem;
     background: $light;
     border-left: 4px solid $primary;
@@ -77,12 +76,12 @@
     &-item {
       // padding: 1rem;
 
-      &--title {
+      &-title {
         font-size: 1.125rem;
         margin-bottom: 0.5rem;
       }
 
-      &--bg {
+      &-bg {
         display: inline-block;
         width: 40;
         height: 40;
@@ -98,12 +97,12 @@
   }
 
   &__link {
-      color: $primary;
-      text-decoration: none;
-      font-weight: 600;
-      box-shadow: inset 0 -.45em 0 $cards-bg-secondary;
-      transition: all 0.3s ease-in-out;
-    
+    color: $primary;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: inset 0 -.45em 0 $cards-bg-secondary;
+    transition: all 0.3s ease-in-out;
+
     &:hover {
       box-shadow: inset 0 -1em 0 $cards-bg-secondary;
     }
@@ -128,6 +127,19 @@
     }
   }
 
+  &__details {
+
+    &-quote {
+      margin: 3rem 0;
+    }
+
+    &-title {
+      color: $primary;
+      letter-spacing: 0.5rem;
+      margin: 2rem 0;
+    }
+  }
+
   &:has(.article__image) {
     border-top: 1px dashed $primary;
     padding-top: 1rem;
@@ -144,7 +156,7 @@
 
 @container (min-width: 1200px) {
   .article {
-    padding: 3rem 10rem; 
+    padding: 3rem 10rem;
     margin: 2rem;
   }
 }
