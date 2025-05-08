@@ -1,6 +1,10 @@
 // ===== SPEAKER CARDS STYLES =====
 // Estilos para las tarjetas de los ponentes
-
+.speaker {
+  &__header {
+    margin-bottom: 4rem;
+  }
+}
 .speaker-card {
   background-color: rgba(239, 202, 45, 0.5);
   padding: 1.5rem;
