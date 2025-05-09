@@ -68,9 +68,15 @@
   }
 
   &__img-container {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    // 👇 Necesario para que ::after funcione correctamente
     position: relative;
-    display: inline-block;
-
+  
     &::after {
       content: "";
       position: absolute;
@@ -78,9 +84,18 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: $cards-bg;
+      background-color: var(--color-primary);
+      mix-blend-mode: multiply;
       pointer-events: none;
     }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
   }
 
   // &__image {

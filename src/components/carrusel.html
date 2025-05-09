@@ -1,0 +1,50 @@
+<section id="speakersCarousel" class="carousel slide c-speakers-carousel" data-bs-ride="carousel"
+    aria-label="Ponentes destacados">
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <div class="c-speaker-card text-center">
+                <div class="c-speaker-card__photo mx-auto mb-3">
+                    <img src="ruta/ponente1.jpg" class="d-block w-100 rounded-circle" alt="Foto de Paula León">
+                </div>
+                <div class="c-speaker-card__content">
+                    <p class="c-speaker-card__name fw-bold">Paula León</p>
+                    <p class="c-speaker-card__topic text-muted">Circularidad en plásticos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="c-speaker-card text-center">
+                <div class="c-speaker-card__photo mx-auto mb-3">
+                    <img src="ruta/ponente2.jpg" class="d-block w-100 rounded-circle" alt="Foto de Marco Ruiz">
+                </div>
+                <div class="c-speaker-card__content">
+                    <p class="c-speaker-card__name fw-bold">Marco Ruiz</p>
+                    <p class="c-speaker-card__topic text-muted">Innovación verde</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Más ponentes aquí... -->
+
+    </div>
+
+    <!-- Controles opcionales -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#speakersCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#speakersCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+
+    <!-- Paginación opcional -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#speakersCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Ponente 1"></button>
+        <button type="button" data-bs-target="#speakersCarousel" data-bs-slide-to="1" aria-label="Ponente 2"></button>
+        <!-- Más bullets si hay más ponentes -->
+    </div>
+</section>
