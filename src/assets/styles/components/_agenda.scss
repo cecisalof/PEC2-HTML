@@ -4,7 +4,7 @@
     &__title {
         margin-bottom: 1rem;
         text-transform: uppercase;
-          color: var(--color-primary);
+        color: var(--color-primary);
         font-weight: 700;
 
         @supports (display: grid) {
@@ -44,19 +44,23 @@
     &__event {
         background-color: #f5c145;
         text-align: left;
+    }
 
-        &-topic {
-            font-family: $font-family-base;
-            color: white;
-            font-weight: 600;
-            margin: 0.6rem 0;
-        }
+    &__event-topic {
+        font-family: $font-family-base;
+        color: white;
+        font-weight: 600;
+        margin: 0.6rem 0;
+    }
 
-        &-description {
-            font-family: $font-family-base;
-            font-size: 0.8rem;
-            margin: 0.6rem 0;
-        }
+    &__event-description {
+        font-family: $font-family-base;
+        font-size: 0.8rem;
+        margin: 0.6rem 0;
+    }
+
+    &__event-time {
+        margin-bottom: 0;
     }
 
     &__talk {
