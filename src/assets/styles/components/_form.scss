@@ -1,0 +1,57 @@
+.form {
+    &--registro {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  
+    &__field {
+      margin-bottom: 1.5rem;
+  
+      &--hidden {
+        display: none;
+      }
+    }
+  
+    &__label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  
+    &__input,
+    &__textarea,
+    &__select {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.375rem;
+    }
+  
+    &__button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 0.375rem;
+      font-weight: 600;
+    }
+  }
+  
+  /* Utilidades adicionales opcionales */
+  body {
+    background-color: #f9f9f9;
+    font-family: system-ui, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  

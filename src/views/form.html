@@ -1,0 +1,64 @@
+    <h1 class="mb-4">Formulario de inscripción</h1>
+
+    <form 
+      class="form form--registro"
+      name="inscripcion"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="inscripcion" />
+      <div class="form__field form__field--hidden">
+        <label class="form__label">No rellenar: <input name="bot-field" /></label>
+      </div>
+
+      <div class="mb-3 form__field">
+        <label for="nombre" class="form__label form-label">Nombre completo</label>
+        <input type="text" class="form-control form__input" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="mb-3 form__field">
+        <label for="email" class="form__label form-label">Correo electrónico</label>
+        <input type="email" class="form-control form__input" id="email" name="email" required>
+      </div>
+
+      <div class="mb-3 form__field">
+        <label for="organizacion" class="form__label form-label">Organización / Empresa</label>
+        <input type="text" class="form-control form__input" id="organizacion" name="organizacion">
+      </div>
+
+      <div class="mb-3 form__field">
+        <label for="cargo" class="form__label form-label">Cargo / Rol</label>
+        <input type="text" class="form-control form__input" id="cargo" name="cargo">
+      </div>
+
+      <div class="mb-3 form__field">
+        <label for="ubicacion" class="form__label form-label">Ciudad / País</label>
+        <input type="text" class="form-control form__input" id="ubicacion" name="ubicacion">
+      </div>
+
+      <div class="mb-3 form__field">
+        <label for="interes" class="form__label form-label">¿Por qué te interesa la economía circular?</label>
+        <textarea class="form-control form__textarea" id="interes" name="interes" rows="4"></textarea>
+      </div>
+
+      <div class="mb-3 form__field">
+        <label for="categoria" class="form__label form-label">Categoría de participación</label>
+        <select class="form-select form__select" id="categoria" name="categoria">
+          <option value="">Selecciona una opción</option>
+          <option value="estudiante">Estudiante</option>
+          <option value="profesional">Profesional</option>
+          <option value="investigador">Investigador/a</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="mb-3 form__field form-check">
+        <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+        <label class="form-check-label form__label" for="newsletter">
+          Deseo recibir información futura sobre eventos y actividades.
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary form__button">Enviar inscripción</button>
+    </form>
