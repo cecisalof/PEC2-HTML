@@ -13,8 +13,8 @@
 // 2. Tools: mixins y funciones propias
 @import "tools/index";
 
-// 3. Bootstrap modular
-@import "bootstrap-custom";
+// // 3. Bootstrap modular
+// @import "bootstrap-custom";
 
 // 4. Generic (normalize, reset)
 @import "generic/index";
@@ -37,10 +37,8 @@
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
-
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
+@import "bootstrap/scss/bootstrap.scss";
 
 /**
  * Import layouts

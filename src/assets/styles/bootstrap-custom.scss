@@ -1,23 +1,29 @@
-// bootstrap-custom.scss
-// =============================================
-// Carga modular de Bootstrap, después de definir tus variables
-// =============================================
+// // bootstrap-custom.scss
+// // =============================================
+// // Carga modular de Bootstrap, después de definir tus variables
+// // =============================================
 
-// Core functions & variables
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/maps";
-@import "bootstrap/scss/mixins";
+// // 1. Override Bootstrap variables before importing Bootstrap's SCSS
+// @import "settings/bootstrap-overrides"; // Your custom variables
 
-// Optional utilities (si usas el sistema de utilidades)
-@import "bootstrap/scss/utilities";
+// // 2. Required Bootstrap functions and variables
+// @import "bootstrap/scss/functions";
+// @import "bootstrap/scss/variables";
+// @import "bootstrap/scss/maps";
+// @import "bootstrap/scss/mixins";
 
-// Base resets
-@import "bootstrap/scss/reboot";
+// // 3. Bootstrap components needed for navbar functionality
+// @import "bootstrap/scss/root";
+// @import "bootstrap/scss/reboot";
+// @import "bootstrap/scss/type";
+// @import "bootstrap/scss/images";
+// @import "bootstrap/scss/containers";
+// @import "bootstrap/scss/grid";
+// @import "bootstrap/scss/buttons";     // For .navbar-toggler
+// @import "bootstrap/scss/forms";       // For form elements in navbar
+// @import "bootstrap/scss/nav";         // For .nav and .nav-link
+// @import "bootstrap/scss/dropdown";    // For dropdown menus
+// @import "bootstrap/scss/navbar";      // Main navbar styles
 
-// Components que realmente uses (solo importa los necesarios)
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/forms";
-@import "bootstrap/scss/grid";
-@import "bootstrap/scss/images";
-@import "bootstrap/scss/nav"; // puedes agregar más si los usas
+// // 4. Optional: Bootstrap utilities
+// @import "bootstrap/scss/utilities";

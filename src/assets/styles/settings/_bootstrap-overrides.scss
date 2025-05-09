@@ -1,7 +1,7 @@
 /* stylelint-disable-next-line */
 // =============================================
 // Sobrescribe variables de Bootstrap antes de que se cargue
-// =============================================
+
 
 // 🎨 Colores
 $primary: #008878;
@@ -10,6 +10,7 @@ $info: #005878; // Usado para estados informativos (puede funcionar como "accent
 $light: #FAFAF9; // Usado para fondos claros
 $body-bg: #fff; // Fondo del cuerpo
 $body-color: #2D2D2D; // Color del texto del cuerpo
+$bs-primary-rgb: 0, 136, 120; // RGB del color primario
 
 // 🔤 Tipografía
 $font-family-base: "Open Sans", sans-serif;
@@ -19,3 +20,14 @@ $spacer: 1rem;
 
 // 🌑 Sombra base
 $box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+//   "success":    $success,
+  "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+  "light":      $light,
+//   "dark":       $dark
+);

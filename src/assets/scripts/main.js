@@ -3,11 +3,8 @@
  * see commented examples below
  */
 
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import * as bootstrap from 'bootstrap'
 
-// import 'some-node-module';
-// import SomeModule from 'some-node-module';
 
 /**
  * Write any other JavaScript below
