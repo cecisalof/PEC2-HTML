@@ -4,22 +4,22 @@
   text-align: left;
   position: relative;
   overflow: hidden;
-  height: 70vh;
+  height: 80vh;
 
   @supports (height: 100dvh) {
-    height: 70dvh; // Navegadores modernos
+    height: 80dvh; // Navegadores modernos
   }
 
-  // === Mobile landscape (pantallas pequeñas en horizontal) ===
-  @media (max-width: 800px) and (orientation: landscape) {
-    .header {
-      height: 100vh; // Fallback para navegadores antiguos
+  // // === Mobile landscape (pantallas pequeñas en horizontal) ===
+  // @media (max-width: 900px) and (orientation: landscape) {
+  //   .header {
+  //     height: 90vh; // Fallback para navegadores antiguos
 
-      @supports (height: 100dvh) {
-        height: 100dvh; // Navegadores modernos
-      }
-    }
-  }
+  //     @supports (height: 100dvh) {
+  //       height: 85dvh; // Navegadores modernos
+  //     }
+  //   }
+  // }
 
   // Pantallas medianas en general
   @media (min-width: 768px) and (max-width: 1439px) and (orientation: portrait){
