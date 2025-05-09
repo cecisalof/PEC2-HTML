@@ -4,13 +4,12 @@
 
 
 // 🎨 Colores
-$primary: #008878;
-$secondary: #EAAE17;
-$info: #005878; // Usado para estados informativos (puede funcionar como "accent")
-$light: #FAFAF9; // Usado para fondos claros
-$body-bg: #fff; // Fondo del cuerpo
-$body-color: #2D2D2D; // Color del texto del cuerpo
-$bs-primary-rgb: 0, 136, 120; // RGB del color primario
+$primary: hsl(173, 100%, 27%);     /* #008878 */
+$secondary: hsl(43, 85%, 56%);     /* #EAAE17 */
+$info: hsl(198, 100%, 18%);        /* #005878 */
+$light: hsl(60, 20%, 98%);         /* #FAFAF9 */
+$body-bg: hsl(0, 0%, 100%);
+$body-color: hsl(0, 0%, 18%);
 
 // 🔤 Tipografía
 $font-family-base: "Open Sans", sans-serif;
@@ -24,10 +23,6 @@ $box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
-//   "success":    $success,
   "info":       $info,
-//   "warning":    $warning,
-//   "danger":     $danger,
   "light":      $light,
-//   "dark":       $dark
 );
