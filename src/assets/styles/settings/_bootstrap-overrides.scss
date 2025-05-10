@@ -4,12 +4,20 @@
 
 
 // 🎨 Colores
-$primary: hsl(173, 100%, 27%);     /* #008878 */
-$secondary: hsl(43, 85%, 56%);     /* #EAAE17 */
-$info: hsl(198, 100%, 18%);        /* #005878 */
-$light: hsl(60, 20%, 98%);         /* #FAFAF9 */
+$primary: hsl(173, 100%, 27%);
+/* #008878 */
+$secondary: hsl(43, 85%, 56%);
+/* #EAAE17 */
+$info: hsl(198, 100%, 18%);
+/* #005878 */
+$light: hsl(60, 20%, 98%);
+/* #FAFAF9 */
 $body-bg: hsl(0, 0%, 100%);
 $body-color: hsl(0, 0%, 18%);
+$nav-link-color: hsl(0, 0%, 100%); // overrides bootstarp nav-link-color
+$nav-link-hover-color: $secondary;
+$nav-link-font-weight: 500;
+$navbar-light-active-color: $secondary;
 
 // 🔤 Tipografía
 $font-family-base: "Open Sans", sans-serif;
@@ -21,8 +29,8 @@ $spacer: 1rem;
 $box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "info":       $info,
-  "light":      $light,
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $info,
+  "light": $light,
 );
