@@ -34,3 +34,24 @@ $theme-colors: (
   "info": $info,
   "light": $light,
 );
+
+// botones
+$btn-color: $primary;
+$btn-primary-color: $light;
+$btn-primary-bg: $primary;
+$btn-primary-border-color: $primary;
+
+$btn-secondary-color: $primary;
+$btn-primary-bg: $light;
+$btn-secondary-border-color: $primary;
+
+// // Estados interactivos (opcional)
+// $btn-primary-hover-bg: #5a6268;
+// $btn-primary-hover-border-color: #4e555b;
+// $btn-secondary-hover-bg: #5a6268;
+// $btn-secondary-hover-border-color: #4e555b;
+
+// Estilos generales aplicables a todos los botones
+$btn-border-radius: 3rem;
+$btn-font-weight: 500;
+
