@@ -1,4 +1,5 @@
 .footer {
+  container: inline-size;
   background-color: $primary;
   padding: 0rem 1rem 2rem 1rem;
   color: #fff;
@@ -18,91 +19,31 @@
 
   &>* {
     position: relative;
-    z-index: 2; // aseguras que el contenido esté encima de la curva
+    z-index: 2; // asegura que el contenido esté encima de la curva
   }
 
-  &__top {
-    margin: 8rem 2rem 0 2rem;
-  }
 
   &__logo {
-    margin-bottom: 1.5rem;
-
     img {
-      max-width: 80px;
+      max-width: 60px;
     }
   }
 
   &__nav {
     margin-bottom: 1.5rem;
-  }
+    padding: 8rem 0 0;
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  &__item {
-    margin-bottom: 0.5rem;
-  }
-
-  &__link {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-
-    &:hover {
-      text-decoration: none;
-      color: $secondary;
-    }
   }
 
   &__cta {
     margin-top: 1.5rem;
   }
+}
 
-  &__bottom {
+// Container Query--- REVISAR!!
+@container (min-width: 768px) {
+  .footer__nav {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1.5rem;
-  }
-
-  &__social {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; // Fallback para navegadores viejos
-    justify-content: space-evenly;
-    width: 100%;
-    max-width: 300px; // Controla el ancho total de los íconos
-    gap: 1rem;
-
-    @supports (display: grid) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-items: center; // centra los íconos en su celda
-      gap: 1rem; // Espacio entre íconos
-    }
-  }
-
-  &__social-item {
-    a {
-      text-decoration: none;
-    }
-  }
-
-  &__social-link {
-    color: #ffffff; // Íconos blancos
-    font-size: 1.8rem; // Tamaño del ícono, ajustable según mockup
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    transition: color 0.3s;
-
-    &:hover {
-      color: #e5e2db; // Un pequeño efecto hover si quieres
-    }
   }
 }
