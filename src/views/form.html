@@ -1,13 +1,13 @@
-    <h1 class="mx-4 my-4">Formulario de inscripción</h1>
+    <h1 class="mx-4 my-4 text-center">Formulario de inscripción</h1>
 
-    <form 
+    <form
+      id="form-validation"
       class="form form--registro"
       name="inscripcion"
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
       action="/form-confirmation.html"
-      id="form-validation"
     >
       <input type="hidden" name="form-name" value="inscripcion" />
       <div class="form__field form__field--hidden">
@@ -17,21 +17,23 @@
       <div class="mx-4 my-4">
         <label for="nombre" class="form__label form-label">Nombre completo</label>
         <input type="text" class="form-control form__input" id="nombre" name="nombre" required>
+        <span class="error_nombre"></span>
       </div>
 
       <div class="mx-4 my-4">
         <label for="email" class="form__label form-label">Correo electrónico</label>
         <input type="email" class="form-control form__input" id="email" name="email" required>
+        <span class="error_email"></span>
       </div>
 
       <div class="mx-4 my-4">
         <label for="organizacion" class="form__label form-label">Organización / Empresa</label>
-        <input type="text" class="form-control form__input" id="organizacion" name="organizacion" required>
+        <input type="text" class="form-control form__input" id="organizacion" name="organizacion">
       </div>
 
       <div class="mx-4 my-4">
         <label for="cargo" class="form__label form-label">Cargo / Rol</label>
-        <input type="text" class="form-control form__input" id="cargo" name="cargo" required>
+        <input type="text" class="form-control form__input" id="cargo" name="cargo">
       </div>
 
       <div class="mx-4 my-4">
@@ -47,6 +49,7 @@
       <div class="mx-4 my-4">
         <label for="categoria" class="form__label form-label">Categoría de participación</label>
         <select class="form-select form__select" id="categoria" name="categoria" required>
+          <span class="error_categoria"></span>
           <option value="">Selecciona una opción</option>
           <option value="estudiante">Estudiante</option>
           <option value="profesional">Profesional</option>
@@ -62,6 +65,6 @@
         </label>
       </div>
       <div class="d-flex justify-content-center">
-        <button type="submit" class="btn btn-secondary form__button justify-content-center">Enviar inscripción</button>
+        <button type="" class="btn btn-secondary form__button justify-content-center">Enviar inscripción</button>
       </div>
     </form>
