@@ -7,4 +7,7 @@
         NOTA: Nada aquí debe compilar a CSS por sí solo.
 \*------------------------------------*/
 
-@import "mixins";
+// @layer tools {
+  @import "mixins";
+  @import "functions";
+// }

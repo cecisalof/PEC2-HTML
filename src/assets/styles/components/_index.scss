@@ -8,11 +8,16 @@
     NOTA: Componentes visuales con clases específicas, reutilizables en todo el sitio.
 \*------------------------------------*/
 
-@import "button";
-@import "header";
-@import "agenda";
-@import "footer";
-@import "navbar";
-@import "speaker-cards";
-@import "form";
+// @layer components {
+  @import "button";
+  @import "header";
+  @import "agenda";
+  @import "footer";
+  @import "navbar";
+  @import "speaker-cards";
+  @import "form";
+// }
 
+// @layer components {
+//     @import './_speaker-cards';
+// }

@@ -22,8 +22,10 @@
 // 5. Elements (etiquetas HTML)
 @import "elements/index";
 
+// @layer generic, components, trumps;
+
 // 6. Objects (estructuras sin aspecto)
-@import "objects/index";
+// @import "objects/index";
 
 // 7. Components (UI reutilizable)
 @import "components/index";
@@ -45,11 +47,13 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
-@import "layouts/about";
-@import "layouts/contact";
 
 
+// @import "layouts/home";
+// @import "layouts/about";
+// @import "layouts/contact";
+
+@import "layouts/index";     // contiene @layer layouts
 
 /**
  * Do NOT include anything else in this file!

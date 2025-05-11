@@ -7,4 +7,6 @@
     NOTA: Usar con moderación. Ideal para ajustes rápidos, prototipado o escapes puntuales.
 \*------------------------------------*/
 
-@import "utilities";
+@layer trumps {
+  @import "./utilities";
+}

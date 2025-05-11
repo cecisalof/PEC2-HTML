@@ -9,5 +9,7 @@
         NOTA: Solo declaraciones de variables.
 \*------------------------------------*/
 
-@import "bootstrap-overrides";
-@import "variables";
+// @layer settings {
+  @import "bootstrap-overrides";
+  @import "variables";
+// }
