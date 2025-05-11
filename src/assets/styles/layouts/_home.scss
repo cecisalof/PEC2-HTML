@@ -3,7 +3,7 @@
  */
 
 
-/* ===== Layout: Main ===== */
+// /* ===== Layout: Main ===== */
 .main {
     padding: 2rem 1rem;
     // margin-top: -7rem;
@@ -23,9 +23,7 @@
     }
 }
 
-/* ===== Fallback Flexbox ===== */
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+.agenda-wrapper {
+    container-type: inline-size;
+  }
+  

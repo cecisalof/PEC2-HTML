@@ -1,5 +1,11 @@
 .conference-agenda {
     font-family: $headings-font-family;
+    
+    // Fallback: Flex layout
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
 
     &__title {
         margin-bottom: 1rem;
@@ -17,11 +23,11 @@
     }
 
     &--half {
-        @media (min-width: 768px) {
+        @container (min-width: 600px) {
             grid-column: span 3;
         }
 
-        @media (min-width: 1200px) {
+        @container (min-width: 1200px) {
             grid-column: span 4;
         }
     }
@@ -94,17 +100,17 @@
         }
     }
 
-    // Mejora progresiva: Grid para desktop
+    // Mejora progresiva: Grid con container queries
     @supports (display: grid) {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
 
-        @media (min-width: 768px) {
+        @container (min-width: 600px) {
             grid-template-columns: repeat(6, 1fr);
         }
 
-        @media (min-width: 1200px) {
+        @container (min-width: 1200px) {
             grid-template-columns: repeat(8, 1fr);
         }
     }
