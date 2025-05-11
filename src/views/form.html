@@ -7,6 +7,7 @@
       data-netlify="true"
       netlify-honeypot="bot-field"
       action="/form-confirmation.html"
+      id="form-validation"
     >
       <input type="hidden" name="form-name" value="inscripcion" />
       <div class="form__field form__field--hidden">
@@ -25,12 +26,12 @@
 
       <div class="mx-4 my-4">
         <label for="organizacion" class="form__label form-label">Organización / Empresa</label>
-        <input type="text" class="form-control form__input" id="organizacion" name="organizacion">
+        <input type="text" class="form-control form__input" id="organizacion" name="organizacion" required>
       </div>
 
       <div class="mx-4 my-4">
         <label for="cargo" class="form__label form-label">Cargo / Rol</label>
-        <input type="text" class="form-control form__input" id="cargo" name="cargo">
+        <input type="text" class="form-control form__input" id="cargo" name="cargo" required>
       </div>
 
       <div class="mx-4 my-4">
@@ -45,7 +46,7 @@
 
       <div class="mx-4 my-4">
         <label for="categoria" class="form__label form-label">Categoría de participación</label>
-        <select class="form-select form__select" id="categoria" name="categoria">
+        <select class="form-select form__select" id="categoria" name="categoria" required>
           <option value="">Selecciona una opción</option>
           <option value="estudiante">Estudiante</option>
           <option value="profesional">Profesional</option>
