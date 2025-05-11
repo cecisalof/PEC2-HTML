@@ -1,35 +1,33 @@
 .btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-family: $headings-font-family;
-    border-radius: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-family: $headings-font-family;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
 
-    &-primary {
-      background-color: $primary;
-      color: $light;
+.btn-primary {
+  background-color: $primary;
+  color: $light;
 
-      &:hover{
-        color: $primary;
-        background-color: $light;
-        border: solid 2px $primary;
-      }  
-    }
-  
-    &-secondary {
-      background-color: $light;
-      color: $primary;
-      border: solid 2px $primary;
-
-      &:hover{
-        color: #000;
-        background-color: $secondary;
-        border: solid 2px $secondary;
-      }  
-    }
+  &:hover {
+    color: $primary;
+    background-color: $light;
+    border: solid 2px $primary;
   }
+}
+
+.btn-secondary {
+  background-color: $light;
+  color: $primary;
+  border: solid 2px $primary;
+
+  &:hover {
+    color: #000;
+    background-color: $secondary;
+    border: solid 2px $secondary;
+  }
+}
+
   
   

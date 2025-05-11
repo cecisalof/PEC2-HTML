@@ -1,50 +1,98 @@
-<section id="speakersCarousel" class="carousel slide c-speakers-carousel" data-bs-ride="carousel"
-    aria-label="Ponentes destacados">
+<section id="speakersCarousel" class="carousel slide c-speakers-carousel" data-bs-ride="carousel" aria-label="Ponentes destacados">
     <div class="carousel-inner">
-
-        <div class="carousel-item active">
+  
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row">
+          <!-- Ponente 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="c-speaker-card text-center">
-                <div class="c-speaker-card__photo mx-auto mb-3">
-                    <img src="ruta/ponente1.jpg" class="d-block w-100 rounded-circle" alt="Foto de Paula León">
-                </div>
-                <div class="c-speaker-card__content">
-                    <p class="c-speaker-card__name fw-bold">Paula León</p>
-                    <p class="c-speaker-card__topic text-muted">Circularidad en plásticos</p>
-                </div>
+              <img src="./assets/images/speakers/walter.png" class="d-block w-100 rounded-circle" alt="Walter R. Stahel">
+              <div class="c-speaker-card__content">
+                <p class="c-speaker-card__name fw-bold">Walter R. Stahel</p>
+                <p class="c-speaker-card__topic text-muted">Fundador y Director del Product-Life Institute</p>
+              </div>
             </div>
-        </div>
-
-        <div class="carousel-item">
+          </div>
+  
+          <!-- Ponente 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="c-speaker-card text-center">
-                <div class="c-speaker-card__photo mx-auto mb-3">
-                    <img src="ruta/ponente2.jpg" class="d-block w-100 rounded-circle" alt="Foto de Marco Ruiz">
-                </div>
-                <div class="c-speaker-card__content">
-                    <p class="c-speaker-card__name fw-bold">Marco Ruiz</p>
-                    <p class="c-speaker-card__topic text-muted">Innovación verde</p>
-                </div>
+              <img src="./assets/images/speakers/jocelyn.png" class="d-block w-100 rounded-circle" alt="Jocelyn Blériot">
+              <div class="c-speaker-card__content">
+                <p class="c-speaker-card__name fw-bold">Jocelyn Blériot</p>
+                <p class="c-speaker-card__topic text-muted">Director Ejecutivo en la Fundación Ellen MacArthur</p>
+              </div>
             </div>
+          </div>
+  
+          <!-- Ponente 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="c-speaker-card text-center">
+              <img src="./assets/images/speakers/leyla.png" class="d-block w-100 rounded-circle" alt="Leyla Acaroglu">
+              <div class="c-speaker-card__content">
+                <p class="c-speaker-card__name fw-bold">Leyla Acaroglu</p>
+                <p class="c-speaker-card__topic text-muted">Fundadora de Disrupt Design y The UnSchool</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!-- Más ponentes aquí... -->
-
+      </div>
+  
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row">
+          <!-- Ponente 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="c-speaker-card text-center">
+              <img src="./assets/images/speakers/ken.png" class="d-block w-100 rounded-circle" alt="Ken Webster">
+              <div class="c-speaker-card__content">
+                <p class="c-speaker-card__name fw-bold">Ken Webster</p>
+                <p class="c-speaker-card__topic text-muted">Profesor en la Univ. de Cranfield, ex Fundación Ellen MacArthur</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Ponente 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="c-speaker-card text-center">
+              <img src="./assets/images/speakers/michael.png" class="d-block w-100 rounded-circle" alt="Michael Braungart">
+              <div class="c-speaker-card__content">
+                <p class="c-speaker-card__name fw-bold">Michael Braungart</p>
+                <p class="c-speaker-card__topic text-muted">Cofundador de Cradle to Cradle, Director de EPEA</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Ponente 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="c-speaker-card text-center">
+              <img src="./assets/images/speakers/virgin.png" class="d-block w-100 rounded-circle" alt="Virginijus Sinkevičius">
+              <div class="c-speaker-card__content">
+                <p class="c-speaker-card__name fw-bold">Virginijus Sinkevičius</p>
+                <p class="c-speaker-card__topic text-muted">Comisario Europeo de Medio Ambiente</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
     </div>
-
-    <!-- Controles opcionales -->
+  
+    <!-- Controles -->
     <button class="carousel-control-prev" type="button" data-bs-target="#speakersCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#speakersCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
     </button>
-
-    <!-- Paginación opcional -->
+  
+    <!-- Indicadores -->
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#speakersCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Ponente 1"></button>
-        <button type="button" data-bs-target="#speakersCarousel" data-bs-slide-to="1" aria-label="Ponente 2"></button>
-        <!-- Más bullets si hay más ponentes -->
+      <button type="button" data-bs-target="#speakersCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#speakersCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
     </div>
-</section>
+  </section>
+  
